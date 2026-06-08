@@ -38,12 +38,15 @@ createPlatform(550, 480, 170, 10, "black");
 createPlatform(800, 380, 170, 10, "black");
 createPlatform(460, 310, 150, 10, "black");
 createPlatform(700, 180, 160, 10, "black");
-createPlatform();
+createPlatform(980, 230, 160, 10, "black");
+createPlatform(1300, 550, 40, 5, "black");
 
 
 
     // TODO 3 - Create Collectables
-
+createCollectable("steve", 1300, 520);
+createCollectable("diamond", 360, 450);
+createCollectable("max", 720, 100);
 
 
     
