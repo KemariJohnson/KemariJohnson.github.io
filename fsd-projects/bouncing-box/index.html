@@ -17,14 +17,16 @@
         top: 100px;
         /* Change me! */
         left: 0px;
+        padding: 15px;
       }
 
       .board {
         height: 100vh;
       }
       body {
- background-image: url(https://imgs.search.brave.com/kSsIIptckWq1rwEh6sAbxamm2W3FtrdcGNxGhhKFzY4/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Zp/cnR1YWx5b3V0dWJl/ci9pbWFnZXMvMi8y/YS9LQU1JVFNVQkFL/SV9TVFVESU9fSGVy/b2luZXMuanBnL3Jl/dmlzaW9uL2xhdGVz/dC9zY2FsZS10by13/aWR0aC1kb3duLzE4/NT9jYj0yMDIxMDUw/NTA3NTkzMQ);
-      }
+ background-image: url(https://imgs.search.brave.com/kG9VjK0pIf03r8qLN1vHfJ_Dmdkjzr2hSjzoINs7BRs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rYWYu/a2FtaXRzdWJha2ku/anAvd3Avd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDMva2Fm/X2ltYWdpbmFyeWZy/aWVuZC0xMjQweDEy/NDAucG5n);
+ background-size:cover     
+}
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   </head>
@@ -112,7 +114,7 @@ if (positionX > boardWidth){
 positionX = 0
 changeBoxText(points);
 points++;
-speed += 3;
+speed = 3 * points + 10
 if(positionX > boardWidth){
   speed *= -1;
 }
